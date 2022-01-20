@@ -13,8 +13,8 @@ install_github('Kleebaum/ragram')
 
 ### Load Sentinel-1 data of Kilimanjaro region
 ```
-master <- sarRecord('extdata/S1A_IW_GRDH_1SDV_20151220T155517.SAFE/', satellite = 'sentinel') 
-slave <- sarRecord('extdata/S1A_IW_GRDH_1SDV_20151215T154711.SAFE/', satellite = 'sentinel')
+master <- sarRecord('extdata/S1A_IW_GRDH_1SDV_20151220T155517.SAFE/', satellite = 'sentinel', polarization ='VV') 
+slave <- sarRecord('extdata/S1A_IW_GRDH_1SDV_20151215T154711.SAFE/', satellite = 'sentinel' , polarization ='VV')
 
 data(kili)
 ```
